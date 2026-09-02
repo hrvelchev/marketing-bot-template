@@ -1,0 +1,23 @@
+# Copy this to users.yaml and replace with real values.
+#
+# Each user listed below can DM the operator bot and have commands honored.
+# Anyone NOT in this list gets a polite rejection.
+#
+# To get your Telegram numeric user_id: DM @userinfobot on Telegram, it
+# replies with your ID.
+
+users:
+  - user_key: "A"
+    display_name: "Operator"
+    telegram_user_id: 123456789       # ← replace with your real Telegram ID
+    default_language: "English"
+    timezone: "Europe/London"          # IANA timezone string
+    daily_call_limit: 200              # max Claude calls per day per user
+
+  # Add more users if multiple people should be able to operate the bot.
+  # - user_key: "B"
+  #   display_name: "Co-operator"
+  #   telegram_user_id: 987654321
+  #   default_language: "English"
+  #   timezone: "Europe/London"
+  #   daily_call_limit: 100

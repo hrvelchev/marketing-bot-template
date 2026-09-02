@@ -1,0 +1,12 @@
+# Drop your three Instagram reference templates here:
+#   - daily_recap_template.png
+#   - weekly_review_template.png
+#   - monthly_report_template.png
+#
+# These are NOT used to generate the final IG card directly. They're attached
+# to the DM the bot sends you after you approve a draft, so you can paste them
+# into ChatGPT along with the auto-generated prompt to produce a brand-aligned
+# image.
+#
+# Recommended: 1080x1080 or 1254x1254, dark background, with empty placeholder
+# regions where dynamic data (numbers, dates, commentary) will go.
