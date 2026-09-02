@@ -17,12 +17,12 @@ templated cards.
                     │  Owner (you) — talks to the bot in DM  │
                     └─────────────┬──────────────────────────┘
                                   │
-                ┌─────────────────┴────────────────┐
+                ┌─────────────────┴─────────────────────┐
                 │  Telegram Bot (python-telegram-bot)   │
-                │  • Receives commands ("draft a post")  │
-                │  • Sends approval DMs with ✅/✏️/❌    │
-                │  • Routes user messages to Claude      │
-                └─────────────────┬────────────────┘
+                │  • Receives commands ("draft a post") │
+                │  • Sends approval DMs with ✅/✏️/❌  │
+                │  • Routes user messages to Claude     │
+                └─────────────────┬─────────────────────┘
                                   │
                 ┌─────────────────┴────────────────┐
                 │       Claude tool-use loop       │
@@ -34,7 +34,7 @@ templated cards.
         ┌─────────▼──────┐ ┌──────▼──────┐  ┌────────▼──────┐
         │  Telegram      │ │      X      │  │   Instagram   │
         │  channel       │ │   (tweepy)  │  │ (Meta Graph,  │
-        │ (channel_bot) │ │             │  │  manual flow) │
+        │ (channel_bot)  │ │             │  │  manual flow) │
         └────────────────┘ └─────────────┘  └───────────────┘
 ```
 
@@ -170,7 +170,7 @@ marketing-bot-template/
     ├── marketing.py                  # draft / approve / publish executors
     ├── ig_workflow.py                # the manual IG state machine
     ├── social_publisher.py           # X + IG publishers
-    ├── channel_bot.py               # channel sender wrapper
+    ├── channel_bot.py                # channel sender wrapper
     ├── scheduler.py                  # cron jobs for auto-drafts
     ├── telegram_bot.py               # bot handlers + ✅/✏️/❌ + photo
     └── router.py                     # routes Claude tool calls
